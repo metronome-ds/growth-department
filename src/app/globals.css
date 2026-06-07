@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+/* ── Growth Department design tokens ──────────────────────────
+   Edit these values to re-theme the whole site in one place. */
+:root {
+  --color-ink: #15130f;        /* near-black, warm */
+  --color-paper: #f6f3ec;      /* warm off-white background */
+  --color-paper-2: #ffffff;    /* card surfaces */
+  --color-accent: #1f5e3f;     /* deep green = "growth" */
+  --color-accent-2: #c9f24d;   /* bright lime highlight */
+  --color-muted: #6b6557;      /* secondary text */
+  --color-line: #e3ddd1;       /* hairline borders */
+
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body: "Manrope", system-ui, sans-serif;
+
+  --max-w: 72rem;
+}
+
+@theme inline {
+  --color-ink: var(--color-ink);
+  --color-paper: var(--color-paper);
+  --color-paper-2: var(--color-paper-2);
+  --color-accent: var(--color-accent);
+  --color-accent-2: var(--color-accent-2);
+  --color-muted: var(--color-muted);
+  --color-line: var(--color-line);
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Reusable section shell */
+.section {
+  width: 100%;
+  max-width: var(--max-w);
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+}
+
+.eyebrow {
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  font-weight: 600;
+}
