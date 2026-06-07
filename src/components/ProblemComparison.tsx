@@ -1,24 +1,22 @@
 // Problem / Comparison — contrasts "hiring in-house" vs "Growth Department".
 const columns = [
   {
-    title: "Hiring in-house",
+    title: "Hiring In-House",
     tone: "muted" as const,
     points: [
-      "One salary, one skill set",
-      "Recruiting, onboarding, management overhead",
-      "Gaps when they're on leave",
-      "20,000+ AED/month all-in",
+      "One salary",
+      "One skillset",
+      "Recruitment costs",
+      "Requires management",
+      "Limited capacity",
     ],
+    footer: "20,000+ AED/month",
   },
   {
     title: "Growth Department",
     tone: "accent" as const,
-    points: [
-      "A full team across every channel",
-      "Up and running in days, not months",
-      "Always-on delivery and reporting",
-      "From 10,000 AED/month",
-    ],
+    points: ["Strategy", "Design", "Content", "Advertising", "Reporting"],
+    footer: "10,000 AED/month",
   },
 ];
 
@@ -35,7 +33,7 @@ export default function ProblemComparison() {
           {columns.map((col) => (
             <div
               key={col.title}
-              className={`rounded-2xl border p-8 ${
+              className={`flex flex-col rounded-2xl border p-8 ${
                 col.tone === "accent"
                   ? "border-accent bg-accent text-paper"
                   : "border-line bg-paper"
@@ -54,9 +52,22 @@ export default function ProblemComparison() {
                   </li>
                 ))}
               </ul>
+              <p
+                className={`mt-8 font-display text-2xl font-semibold ${
+                  col.tone === "accent" ? "text-paper" : "text-ink"
+                }`}
+              >
+                {col.footer}
+              </p>
             </div>
           ))}
         </div>
+
+        <p className="mt-10 max-w-2xl text-base text-muted">
+          Most growing businesses don&apos;t need another employee. They need a
+          team. Growth Department gives you access to strategy, creative,
+          content and advertising through one fixed monthly engagement.
+        </p>
       </div>
     </section>
   );

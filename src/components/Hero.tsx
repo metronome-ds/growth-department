@@ -14,8 +14,8 @@ export default function Hero() {
         </h1>
 
         <p className="mt-8 max-w-2xl text-lg text-muted md:text-xl">
-          Social media, content creation, design, advertising and reporting —
-          run by one team, for a fraction of the cost of a single hire.
+          Get a designer, content creator, ad specialist and marketing
+          strategist, all for less than the cost of hiring one employee.
         </p>
 
         <div className="mt-10 flex flex-wrap items-center gap-4">
@@ -32,6 +32,11 @@ export default function Hero() {
             See pricing
           </a>
         </div>
+
+        <p className="mt-6 max-w-xl text-sm text-muted">
+          Built for Dubai SMEs that need marketing handled without building an
+          in-house team.
+        </p>
       </div>
     </section>
   );

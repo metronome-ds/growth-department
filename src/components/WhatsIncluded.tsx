@@ -1,10 +1,29 @@
-// What's Included — the five core services in the monthly offer.
+// What's Included — the six core capabilities in the monthly offer.
 const services = [
-  { title: "Social media", desc: "Channel management, scheduling and community." },
-  { title: "Content creation", desc: "Posts, captions, short-form video and copy." },
-  { title: "Design", desc: "On-brand creative for every channel and campaign." },
-  { title: "Advertising", desc: "Paid campaigns set up, run and optimised." },
-  { title: "Reporting", desc: "Clear monthly reporting on what's working." },
+  {
+    title: "Content",
+    desc: "Stay visible with consistent content, publishing and creative execution.",
+  },
+  {
+    title: "Advertising",
+    desc: "Generate leads and enquiries through Meta and Google campaigns.",
+  },
+  {
+    title: "Creative",
+    desc: "Professional design and campaign assets that strengthen your brand.",
+  },
+  {
+    title: "Strategy",
+    desc: "Monthly planning and guidance focused on growth and performance.",
+  },
+  {
+    title: "Reporting",
+    desc: "Clear reporting that shows what's working and where to improve.",
+  },
+  {
+    title: "Execution",
+    desc: "Everything managed for you so you can focus on running the business.",
+  },
 ];
 
 export default function WhatsIncluded() {
@@ -13,7 +32,7 @@ export default function WhatsIncluded() {
       <div className="section py-20 md:py-28">
         <p className="eyebrow mb-4">What&apos;s included</p>
         <h2 className="max-w-2xl font-display text-3xl font-semibold tracking-tight md:text-4xl">
-          Everything your marketing needs, in one monthly engagement.
+          Everything your business needs to attract customers and grow.
         </h2>
 
         <div className="mt-12 grid gap-px overflow-hidden rounded-2xl border border-line bg-line sm:grid-cols-2 lg:grid-cols-3">
@@ -24,6 +43,11 @@ export default function WhatsIncluded() {
             </div>
           ))}
         </div>
+
+        <p className="mt-8 max-w-2xl text-base text-muted">
+          Social media, content creation, advertising, design and reporting.
+          Managed through one dedicated team.
+        </p>
       </div>
     </section>
   );

@@ -6,10 +6,11 @@ export default function FinalCTA() {
     <section className="bg-ink text-paper">
       <div className="section py-24 text-center md:py-32">
         <h2 className="mx-auto max-w-3xl font-display text-4xl font-semibold leading-tight tracking-tight md:text-6xl">
-          Your marketing department is one conversation away.
+          Ready to stop managing marketing yourself?
         </h2>
         <p className="mx-auto mt-6 max-w-xl text-lg text-paper/70">
-          Book a free Growth Session and we&apos;ll show you exactly what we&apos;d do.
+          Get the team, structure and execution your business needs, for one
+          fixed monthly fee.
         </p>
         <Link
           href="/book"
